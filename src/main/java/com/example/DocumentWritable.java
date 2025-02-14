@@ -3,24 +3,22 @@ package com.example;
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.io.WritableUtils;
 
-public class DocumentWriteable implements WritableComparable<DocumentWriteable> {
+public class DocumentWritable implements WritableComparable<DocumentWritable> {
 
     private String id;
     private int words;
     
-    public DocumentWriteable() {
+    public DocumentWritable() {
         this.id = "";
         this.words = 0;
     }
 
-    public DocumentWriteable(String id, int words) {
+    public DocumentWritable(String id, int words) {
         this.id = id;
         this.words = words;
     }
@@ -38,7 +36,7 @@ public class DocumentWriteable implements WritableComparable<DocumentWriteable> 
     }
     
     @Override
-    public int compareTo(DocumentWriteable o) {
+    public int compareTo(DocumentWritable o) {
         int cmp = id.compareTo(o.getId());
         if (cmp != 0) return cmp;
         return Integer.compare(words, o.getWords());
@@ -53,7 +51,7 @@ public class DocumentWriteable implements WritableComparable<DocumentWriteable> 
     public boolean equals(Object obj) {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
-        DocumentWriteable other = (DocumentWriteable)obj;
+        DocumentWritable other = (DocumentWritable)obj;
         return Objects.equals(id, other.getId()) && Objects.equals(words, other.getWords());
     }
     

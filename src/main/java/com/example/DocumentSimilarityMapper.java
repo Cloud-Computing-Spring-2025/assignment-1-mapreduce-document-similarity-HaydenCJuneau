@@ -7,9 +7,9 @@ import java.util.StringTokenizer;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
-public class DocumentSimilarityMapper  extends Mapper<Object, Text, Text, DocumentWriteable> {
+public class DocumentSimilarityMapper  extends Mapper<Object, Text, Text, DocumentWritable> {
 
-    private DocumentWriteable document = new DocumentWriteable();
+    private DocumentWritable document = new DocumentWritable();
     private Text word = new Text();
 
     @Override

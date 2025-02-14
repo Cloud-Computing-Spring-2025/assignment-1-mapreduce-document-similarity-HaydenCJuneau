@@ -1,3 +1,6 @@
 C:\Users\hayde\Documents\UNCC-Work-Local\ITCS-6190\assignment-1\assignment-1-mapreduce-document-similarity-HaydenCJuneau\src\main\java\com\example\controller\DocumentSimilarityDriver.java
 C:\Users\hayde\Documents\UNCC-Work-Local\ITCS-6190\assignment-1\assignment-1-mapreduce-document-similarity-HaydenCJuneau\src\main\java\com\example\DocumentSimilarityMapper.java
 C:\Users\hayde\Documents\UNCC-Work-Local\ITCS-6190\assignment-1\assignment-1-mapreduce-document-similarity-HaydenCJuneau\src\main\java\com\example\DocumentSimilarityReducer.java
+C:\Users\hayde\Documents\UNCC-Work-Local\ITCS-6190\assignment-1\assignment-1-mapreduce-document-similarity-HaydenCJuneau\src\main\java\com\example\DocumentWritable.java
+C:\Users\hayde\Documents\UNCC-Work-Local\ITCS-6190\assignment-1\assignment-1-mapreduce-document-similarity-HaydenCJuneau\src\main\java\com\example\FinalReducer.java
+C:\Users\hayde\Documents\UNCC-Work-Local\ITCS-6190\assignment-1\assignment-1-mapreduce-document-similarity-HaydenCJuneau\src\main\java\com\example\IdentityMapper.java
