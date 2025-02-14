@@ -182,3 +182,15 @@ hdfs dfs -get /output_final /path/to/local/output
 1. Run the Job: `hadoop jar <jar-name> <main-class-path> /input/dataset/<input-filename> /output`
 1. Extract the output: `hdfs dfs -get /output <local-path>`
 1. Copy out of Docker: `docker cp resourcemanager:<docker-path> <local-path>`
+
+## Approach
+I was not sure how to approach this problem. It seems that mapreduce is not set up in a way to easily allow us to pass enough information through.
+We need to track unique words in the union and intersection for each pair of documents.
+I do not think I implemented the solution correctly. I got a solution that almost works.
+It uses multiple map reduce jobs in a chain, but somewhere in the process the data gets lost.
+
+## Challenges
+It is quite hard to solve problems in this framework when we did not learn anything about it in class.
+The documentation for hadoop is quite outdated and limited too. So its very hard to learn.
+I am not ready yet to tackle complex challenges in the framework. It would help to see a flow of how the data should move through each job.
+
